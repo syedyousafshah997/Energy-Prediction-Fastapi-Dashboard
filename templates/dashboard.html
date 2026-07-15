@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f9; color: #222; }
+    nav { background: #2c3e50; padding: 14px 24px; }
+    nav a { color: #fff; text-decoration: none; margin-right: 20px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .chart { background: #fff; padding: 16px; margin-bottom: 30px; border-radius: 8px;
+              box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .chart img { width: 100%; height: auto; border-radius: 4px; }
+    h2 { color: #2c3e50; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/predict">Prediction</a>
+  </nav>
+  <div class="container">
+    <h1>EDA Dashboard</h1>
+
+    <div class="chart">
+      <h2>Average Energy Usage by Hour</h2>
+      <img src="/static/hourly_usage.png" alt="Energy by hour">
+    </div>
+
+    <div class="chart">
+      <h2>Average Energy Usage by Load Type</h2>
+      <img src="/static/loadtype.png" alt="Energy by load type">
+    </div>
+
+    <div class="chart">
+      <h2>Correlation Heatmap</h2>
+      <img src="/static/heatmap.png" alt="Correlation heatmap">
+    </div>
+  </div>
+</body>
+</html>
