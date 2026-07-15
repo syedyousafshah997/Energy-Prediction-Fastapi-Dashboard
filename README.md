@@ -58,6 +58,8 @@ manufacturing plant, including:
 ├── static/                       # EDA charts served by the dashboard
 └── images/                       # Screenshots used in this README
 ```
+For EDA (Exploratory Data Analysis) Check the following Repository:
+https://github.com/syedyousafshah997/Steel-Energy-Consumption-Analysis
 
 ## Part 1 — PCA Analysis
 
