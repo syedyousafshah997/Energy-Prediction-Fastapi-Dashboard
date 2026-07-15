@@ -136,16 +136,7 @@ Built with **FastAPI**, **Jinja2Templates**, and **StaticFiles**, with three rou
   feature (dropdowns for categorical fields, text boxes for numeric fields),
   returning a live prediction on the same page
 
-## Setup & Installation
 
-```bash
-git clone https://github.com/<your-username>/energy-prediction-fastapi-dashboard.git
-cd energy-prediction-fastapi-dashboard
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # macOS/Linux
-pip install -r requirements.txt
-```
 
 ## Model File
 
@@ -174,7 +165,7 @@ Then open `http://127.0.0.1:8000/` in your browser.
 
 ### Prediction Form
 ![Prediction Form Part 1](Images/prediction_page1.png)
-![Prediction Form Part 2](Images/Prediction_page2.png)
+![Prediction Form Part 2](Images/prediction_page2.png)
 
 The form provides dropdowns for categorical fields (`Load_Type`, `Day_of_Week`,
 `Month`, `Weekend`) with valid options pulled directly from the dataset, and
