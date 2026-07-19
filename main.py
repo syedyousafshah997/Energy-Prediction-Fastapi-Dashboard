@@ -22,7 +22,7 @@ MODEL_PATH = "model.joblib"
 DATA_PATH = "Steel_energy_consumption_engineered.csv"
 STATIC_DIR = "static"
 TARGET_COL = "Usage_kWh"
-DROP_COLS = ["date", "High_Load"]   # same drop as Week 2
+DROP_COLS = ["date", "High_Load", "Day_of_week", "Weekend"]   
 
 os.makedirs(STATIC_DIR, exist_ok=True)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
