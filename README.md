@@ -175,7 +175,7 @@ plain text inputs for numeric sensor readings.
 
 ## Key Findings
 
-- The dataset's 41 encoded features compress down to 22 components while
+- The dataset's 32 encoded features compress down to 19 components while
   retaining 95% of variance, revealing substantial redundancy — largely from
   one-hot encoded categorical columns and duplicate time-of-day signals
   (`NSM` and `Hour` capture almost the same information).
