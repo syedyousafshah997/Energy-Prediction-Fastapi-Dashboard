@@ -84,13 +84,13 @@ The notebook (`pca.ipynb`) does the following:
 ![Scree Plot](Images/scree_plot.png)
 
 The explained variance drops off sharply after the first two components —
-together they already capture more than 55% of total variance.
+together they already capture more than 63% of total variance.
 
 ### Cumulative Explained Variance
 
 ![Cumulative Variance](Images/cumulative_variance.png)
 
-**22 out of 41** encoded features are needed to reach the 95% variance threshold —
+**19 out of 32** encoded features are needed to reach the 95% variance threshold —
 meaning roughly half the encoded feature space is redundant.
 
 ### RMSE Comparison
@@ -99,7 +99,7 @@ meaning roughly half the encoded feature space is redundant.
 
 | Version | Test RMSE | R² |
 |---|---|---|
-| Original features (41 encoded) | ~1.07 | ~0.999 |
+| Original features (32 encoded) | ~1.07 | ~0.999 |
 | 3-component PCA | ~2.64 | ~0.994 |
 | 22-component PCA (95% variance) | ~2.66 | ~0.994 |
 
