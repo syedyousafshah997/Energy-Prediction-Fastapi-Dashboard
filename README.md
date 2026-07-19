@@ -117,7 +117,7 @@ along with the power factor readings dominate PC1.
 - **Accuracy trade-off**: RMSE roughly doubles when moving from the original
   feature set to either PCA version (1.07 → ~2.65), and R² drops from 0.999 to
   0.994. That's a real cost, though 0.994 is still a strong score.
-- **Redundant features**: 22 of 41 encoded features capture 95% of the variance,
+- **Redundant features**: 19 of 32 encoded features capture 95% of the variance,
   so about half the feature space (mostly from one-hot encoded categories) adds
   little unique signal.
 - **Would PCA be recommended for a memory-constrained device?** Only
@@ -125,7 +125,7 @@ along with the power factor readings dominate PC1.
   set, and the accuracy drop from PCA is non-trivial for an energy-monitoring
   use case. The 3-component version captures almost all of PCA's benefit with
   the least added complexity, so if memory truly is the binding constraint,
-  3 components is the more efficient choice over 22.
+  3 components is the more efficient choice over 19.
 
 ## Part 2 — FastAPI Dashboard
 
